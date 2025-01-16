@@ -23,9 +23,8 @@ void mock_task(void* args) {
 void test_enqueue_and_execute_tasks() {
     clear_result_buffer();
 
-    enqueue_task(mock_task, "Task1");
-    enqueue_task(mock_task, "Task2");
-
+    enqueue_task(mock_task, "Task1 ");
+    enqueue_task(mock_task, "Task2 ");
     scheduler_run();
 
     TEST_ASSERT_EQUAL_STRING("Task1 Task2 ", result_buffer);
