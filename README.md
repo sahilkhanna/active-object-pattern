@@ -15,5 +15,5 @@ This repository provides a boilerplate implementation of the Active Object patte
 ## Build and Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sahilkhanna/active_object_boilerplate.git
-   cd active_object_boilerplate
+   git clone https://github.com/sahilkhanna/active-object-pattern.git
+   cd active-object-pattern
