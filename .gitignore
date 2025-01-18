@@ -1,0 +1,26 @@
+# Ignore build artifacts
+/build/
+/builddir/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/*.cmake
+
+# Ignore Unity test framework build artifacts
+/tests/sandbox
+/tests/unity/examples/example_1/subprojects/unity
+/tests/unity/examples/example_1/test1.exe
+/tests/unity/examples/example_1/test2.exe
+/tests/unity/examples/example_2/all_tests.exe
+/tests/unity/examples/example_1/test1.out
+/tests/unity/examples/example_1/test2.out
+/tests/unity/examples/example_2/all_tests.out
+/tests/unity/examples/example_4/builddir
+
+# Ignore OS-specific files
+.DS_Store
+
+# Ignore IDE-specific files
+*.sublime-project
+*.sublime-workspace
+.vscode

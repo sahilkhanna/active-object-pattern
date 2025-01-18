@@ -1,7 +1,15 @@
-#include "unity/unity.h"
+#include "unity.h"
 #include "active_object.h"
 #include <string.h>
 
+// Define empty setUp and tearDown functions
+void setUp(void) {
+    // This function is called before each test
+}
+
+void tearDown(void) {
+    // This function is called after each test
+}
 static char result_buffer[100];
 static int result_index = 0;
 
@@ -23,8 +31,8 @@ void mock_task(void* args) {
 void test_enqueue_and_execute_tasks() {
     clear_result_buffer();
 
-    enqueue_task(mock_task, "Task1 ");
-    enqueue_task(mock_task, "Task2 ");
+    enqueue_task(mock_task, "Task1");
+    enqueue_task(mock_task, "Task2");
     scheduler_run();
 
     TEST_ASSERT_EQUAL_STRING("Task1 Task2 ", result_buffer);
